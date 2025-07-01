@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ArrowDown, Github, Linkedin, Mail, Database, BarChart3, TrendingUp, PieChart, LineChart } from 'lucide-react';
 
@@ -39,17 +38,14 @@ const Hero = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <div className="mb-8">
-          {/* Professional Hexagonal Profile Picture */}
-          <div className="w-52 h-52 mx-auto mb-8 relative">
-            <div className="w-full h-full bg-gradient-to-br from-blue-500 via-purple-500 to-cyan-500 p-1 shadow-2xl transform rotate-6" 
-                 style={{clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)'}}>
-              <div className="w-full h-full transform -rotate-6" 
-                   style={{clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)'}}>
+          {/* Professional Rectangular Profile Picture */}
+          <div className="w-52 h-64 mx-auto mb-8 relative">
+            <div className="w-full h-full bg-gradient-to-br from-blue-500 via-purple-500 to-cyan-500 p-1 rounded-xl shadow-2xl transform rotate-3">
+              <div className="w-full h-full transform -rotate-3 rounded-lg overflow-hidden">
                 <img 
                   src={`${basePath}/lovable-uploads/1615c7a8-cec1-45a6-a4de-a62026564e90.png`}
                   alt="Sai Teja Gajula" 
-                  className="w-full h-full object-cover"
-                  style={{clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)'}}
+                  className="w-full h-full object-cover object-center"
                 />
               </div>
             </div>
