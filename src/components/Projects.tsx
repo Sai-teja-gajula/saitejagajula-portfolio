@@ -6,16 +6,18 @@ const Projects = () => {
   const projects = [
     {
       title: "Spotify Data Pipeline Project",
-      technologies: "Python, Apache Kafka, PostgreSQL, Power BI",
+      technologies: "Python, Apache Kafka, PostgreSQL, Power BI, AWS S3, Apache Airflow",
       date: "January 2025",
-      description: "Real-time data pipeline processing 50,000+ user activity logs with cloud storage and analytics.",
+      description: "End-to-end data pipeline processing Spotify data with real-time streaming, ETL workflows, and interactive dashboards.",
       highlights: [
-        "Designed real-time data pipeline using Kafka, Python, and AWS S3",
-        "Created ETL workflows using Apache Airflow with AWS RDS (PostgreSQL)",
-        "Built interactive Power BI dashboards improving insights by 35%",
-        "Delivered real-time analytics for playlist recommendations"
+        "Built real-time data streaming pipeline using Apache Kafka for processing music data",
+        "Implemented ETL workflows with Apache Airflow for automated data processing",
+        "Integrated AWS S3 for scalable cloud storage and data lake architecture",
+        "Created PostgreSQL database for structured data storage and analytics",
+        "Developed interactive Power BI dashboards for music trends and user behavior analysis",
+        "Deployed containerized solution using Docker for consistent environments"
       ],
-      github: "https://github.com/Sai-teja-gajula"
+      github: "https://github.com/Sai-teja-gajula/spotify-data-pipeline-project"
     },
     {
       title: "Disease Prediction & Analytics Web App",
