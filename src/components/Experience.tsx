@@ -34,38 +34,38 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-20 bg-gray-50">
+    <section id="experience" className="py-12 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Experience</h2>
+        <div className="text-center mb-10">
+          <h2 className="text-3xl font-bold text-gray-900 mb-2">Experience</h2>
           <div className="w-24 h-1 bg-blue-600 mx-auto"></div>
         </div>
         
-        <div className="space-y-12">
+        <div className="space-y-8">
           {experiences.map((exp, index) => (
-            <div key={index} className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow">
-              <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
+            <div key={index} className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-shadow">
+              <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                 <div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">{exp.position}</h3>
-                  <h4 className="text-xl font-semibold text-blue-600 mb-2">{exp.company}</h4>
+                  <h3 className="text-xl font-bold text-gray-900 mb-1">{exp.position}</h3>
+                  <h4 className="text-lg font-semibold text-blue-600 mb-1">{exp.company}</h4>
                 </div>
-                <div className="flex flex-col md:items-end space-y-2">
-                  <div className="flex items-center text-gray-600">
-                    <Calendar size={16} className="mr-2" />
+                <div className="flex flex-col md:items-end space-y-1">
+                  <div className="flex items-center text-gray-600 text-sm">
+                    <Calendar size={14} className="mr-2" />
                     {exp.period}
                   </div>
-                  <div className="flex items-center text-gray-600">
-                    <MapPin size={16} className="mr-2" />
+                  <div className="flex items-center text-gray-600 text-sm">
+                    <MapPin size={14} className="mr-2" />
                     {exp.location}
                   </div>
                 </div>
               </div>
               
-              <div className="space-y-3">
+              <div className="space-y-2">
                 {exp.achievements.map((achievement, achIndex) => (
                   <div key={achIndex} className="flex items-start">
-                    <div className="w-2 h-2 bg-blue-600 rounded-full mr-4 mt-2 flex-shrink-0"></div>
-                    <p className="text-gray-700 leading-relaxed">{achievement}</p>
+                    <div className="w-2 h-2 bg-blue-600 rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                    <p className="text-gray-700 leading-relaxed text-sm">{achievement}</p>
                   </div>
                 ))}
               </div>

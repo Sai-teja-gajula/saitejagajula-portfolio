@@ -33,19 +33,19 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-white">
+    <section id="projects" className="py-12 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Featured Projects</h2>
+        <div className="text-center mb-10">
+          <h2 className="text-3xl font-bold text-gray-900 mb-2">Featured Projects</h2>
           <div className="w-24 h-1 bg-blue-600 mx-auto"></div>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-6">
           {projects.map((project, index) => (
-            <div key={index} className="bg-gradient-to-br from-gray-50 to-blue-50 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 hover:scale-105">
-              <div className="flex items-center justify-between mb-4">
-                <div className="flex items-center text-gray-600">
-                  <Calendar size={16} className="mr-2" />
+            <div key={index} className="bg-gradient-to-br from-gray-50 to-blue-50 rounded-2xl p-6 hover:shadow-xl transition-all duration-300 hover:scale-105">
+              <div className="flex items-center justify-between mb-3">
+                <div className="flex items-center text-gray-600 text-sm">
+                  <Calendar size={14} className="mr-2" />
                   {project.date}
                 </div>
                 <a 
@@ -54,25 +54,25 @@ const Projects = () => {
                   rel="noopener noreferrer"
                   className="text-gray-600 hover:text-blue-600 transition-colors"
                 >
-                  <Github size={20} />
+                  <Github size={18} />
                 </a>
               </div>
               
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">{project.title}</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">{project.title}</h3>
               
-              <div className="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium mb-4">
+              <div className="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs font-medium mb-3">
                 {project.technologies}
               </div>
               
-              <p className="text-gray-600 mb-6 leading-relaxed">
+              <p className="text-gray-600 mb-4 leading-relaxed text-sm">
                 {project.description}
               </p>
               
-              <div className="space-y-3 mb-6">
+              <div className="space-y-2 mb-4">
                 {project.highlights.map((highlight, hIndex) => (
                   <div key={hIndex} className="flex items-start">
-                    <ArrowRight size={16} className="text-blue-600 mr-3 mt-1 flex-shrink-0" />
-                    <p className="text-gray-700 text-sm leading-relaxed">{highlight}</p>
+                    <ArrowRight size={14} className="text-blue-600 mr-2 mt-1 flex-shrink-0" />
+                    <p className="text-gray-700 text-xs leading-relaxed">{highlight}</p>
                   </div>
                 ))}
               </div>
@@ -81,9 +81,9 @@ const Projects = () => {
                 href={project.github} 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="inline-flex items-center text-blue-600 hover:text-blue-800 font-semibold transition-colors"
+                className="inline-flex items-center text-blue-600 hover:text-blue-800 font-semibold transition-colors text-sm"
               >
-                View Project <ArrowRight size={16} className="ml-2" />
+                View Project <ArrowRight size={14} className="ml-2" />
               </a>
             </div>
           ))}
